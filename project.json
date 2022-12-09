@@ -1,0 +1,94 @@
+{
+  "name": "time-alexstorm",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "packages/modules/time-alexstorm/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/time-alexstorm",
+        "index": "packages/modules/time-alexstorm/src/index.html",
+        "main": "packages/modules/time-alexstorm/src/main.ts",
+        "polyfills": "packages/modules/time-alexstorm/src/polyfills.ts",
+        "tsConfig": "packages/modules/time-alexstorm/tsconfig.app.json",
+        "assets": [
+          "packages/modules/time-alexstorm/src/favicon.ico",
+          "packages/modules/time-alexstorm/src/assets"
+        ],
+        "styles": ["packages/modules/time-alexstorm/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "packages/modules/time-alexstorm/src/environments/environment.ts",
+              "with": "packages/modules/time-alexstorm/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "time-alexstorm:build:production"
+        },
+        "development": {
+          "browserTarget": "time-alexstorm:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "time-alexstorm:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/modules/time-alexstorm/**/*.ts",
+          "packages/modules/time-alexstorm/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/modules/time-alexstorm/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
