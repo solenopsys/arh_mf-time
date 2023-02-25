@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/alexstorm/time',
+      'dist/modules/richteri/time',
       'packages/modules/time/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
