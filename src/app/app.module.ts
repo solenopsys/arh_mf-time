@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
-import {BootstrapComponent, FuiTemplatesModule, TABLE_PAGE} from "@solenopsys/uimatrix-templates";
+import {BootstrapComponent, FuiTemplatesModule, TABLE_PAGE} from "@solenopsys/ui-templates";
 import {TimeStatComponent} from "./time-stat/time-stat.component";
 import {TIMES} from "./tables.conf";
 import {HttpClientModule} from "@angular/common/http";

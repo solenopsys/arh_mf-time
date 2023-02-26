@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {EChartsOption, format} from 'echarts';
 import {DgraphService} from "@solenopsys/lib-dgraph";
-import {ColorSchemesService} from "@solenopsys/uimatrix-themes";
+import {ColorSchemesService} from "@solenopsys/ui-themes";
 
 
 @Component({
