@@ -7,8 +7,8 @@ import {TIMES} from "./tables.conf";
 import {HttpClientModule} from "@angular/common/http";
 import {NgxEchartsModule} from "ngx-echarts";
 import {FormsModule} from "@angular/forms";
-import {createNgxs} from "@solenopsys/lib-storage";
-import {ClusterState} from "@solenopsys/lib-clusters";
+import {createNgxs} from "@solenopsys/fl-storage";
+import {ClusterState} from "@solenopsys/fl-clusters";
 import {environment} from "../environments/environment";
 
 const ROUTES: Routes = [
