@@ -48,7 +48,7 @@ module.exports = {
       name: 'time',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/time/src/app/entry.module.ts',
+        './Module': 'packages/modules/mf-time/src/app/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -104,8 +104,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/time',
-      'packages/modules/time/src/assets/menu.json'
+      'dist/modules/mf-richteri/time',
+      'packages/modules/mf-time/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],

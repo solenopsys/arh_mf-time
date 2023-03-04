@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/sc-fm-time-richteri",
+  "name": "@solenopsys/mf-time",
   "version": "0.9.1",
   "dependencies": {
     "echarts": "^5.4.0",
