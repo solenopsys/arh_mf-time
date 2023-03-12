@@ -7,7 +7,7 @@ import {ColorSchemesService} from "@solenopsys/ui-themes";
 @Component({
     selector: 'app-time-stat',
     templateUrl: './time-stat.component.html',
-    styleUrls: ['./time-stat.component.css']
+    styleUrls: ['./time-stat.component.scss']
 })
 export class TimeStatComponent implements OnInit {
 
