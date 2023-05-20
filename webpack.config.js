@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/mf-richteri/time',
+      'dist/modules/mf-time',
       'packages/modules/mf-time/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
