@@ -7,9 +7,6 @@ import {TIMES} from "./tables.conf";
 import {HttpClientModule} from "@angular/common/http";
 import {NgxEchartsModule} from "ngx-echarts";
 import {FormsModule} from "@angular/forms";
-import {createNgxs} from "@solenopsys/fl-storage";
-import {ClusterState} from "@solenopsys/fl-clusters";
-import {environment} from "../environments/environment";
 
 const ROUTES: Routes = [
   {path: '', redirectTo: 'stat',pathMatch:'full'},
@@ -31,8 +28,6 @@ export const IMPORTS_CONF = [
   HttpClientModule,
   FormsModule,
   UITemplatesModule,
-
-  ...createNgxs(!environment.production,[]),
 
   RouterModule.forChild([...ROUTES]),
 

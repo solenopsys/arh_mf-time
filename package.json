@@ -1,12 +1,16 @@
 {
   "name": "@solenopsys/mf-time",
-  "version": "0.9.1",
-  "dependencies": {
+  "version": "0.1.0",
+  "peerDependencies": {
     "echarts": "^5.4.0",
-    "ngx-echarts": "^15.0.1"
+    "ngx-echarts": "^16.0.0",
+    "@solenopsys/ui-templates": "^0.1.0",
+    "@solenopsys/fl-storage": "^0.1.0",
+    "@solenopsys/fl-clusters": "^0.1.0",
+    "@solenopsys/fl-dgraph": "^0.1.0",
+    "@solenopsys/ui-themes": "^0.1.0"
   },
   "scripts": {
-    "test": "node index.js",
-    "build": "etsc"
+    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
   }
 }
