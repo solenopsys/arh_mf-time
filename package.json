@@ -1,7 +1,7 @@
 {
   "name": "@solenopsys/mf-time",
   "version": "0.1.0",
-  "peerDependencies": {
+  "dependencies": {
     "echarts": "^5.4.0",
     "ngx-echarts": "^16.0.0",
     "@solenopsys/ui-templates": "^0.1.0",
